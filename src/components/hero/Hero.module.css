@@ -1,0 +1,50 @@
+/* styles.css */
+.active-button {
+    border-bottom: 2px solid #fff; /* Línea debajo del botón activo */
+    border-bottom-width: 1px; /* Reducir el ancho del borde */
+}
+
+.slide-animation {
+    animation: slideIn 2s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .slide-animation-out {
+    animation: slideOut 2s ease-in-out;
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .slide-animation-up {
+    animation: slideUp 2s ease-in-out;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
