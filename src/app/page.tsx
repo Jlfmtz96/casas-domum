@@ -4,7 +4,7 @@ import Image from "next/image";
 import P_SLp from '../assets/Prototipo 1_SLP.png';
 import Artigas from '../assets/Artigas_Logo.svg';
 import r2 from '../assets/r2.jpeg';
-import r4 from '../assets/r4.jpg';
+import r4 from '../assets/VillaMagna.jpg';
 import cdm from '../assets/cdm.jpg';
 import Alia from '../assets/icono_icono_gris.png';
 import Domum from '../assets/domum color original.png';

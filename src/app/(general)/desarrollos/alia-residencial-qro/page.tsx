@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoCube, IoImage, IoLocation, IoMap } from "react-icons/io5";
 import { MutableRefObject, useRef } from "react";
+import { Map } from "@/components/map/Map";
 
 import L5 from '../../../../assets/ALIA_E24A_R01_COMEDOR.jpg'
 import r6 from '../../../../assets/r6.jpeg'
@@ -16,7 +17,9 @@ import Alia from '../../../../assets/icono_icono_verde.png'
 import Terreno from '../../../../assets/icono 160m2.png'
 import Mts from '../../../../assets/icono 231.29m2.png'
 import ModalImage from "react-modal-image";
-
+import G1 from '@/assets/24A_CDM_R02B_VISTA_1.png'
+import A1 from '@/assets/24A_CDM_R08_CASA_C-1.jpg'
+import { MapView } from "@/components/map/MapView";
 
 
 
@@ -102,7 +105,7 @@ export default function AliaQroPage() {
 
         <div id="galeria" className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-2 px-2" ref={galeriaRef}>
             <div className='hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl'>
-                <Image src={r1} alt="" className='object-cover w-full h-full ' />
+                <Image src={G1} alt="" className='object-cover w-full h-full ' />
             </div>
             <div className='hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl'>
                 <Image src={r6} alt="" className='object-cover w-full h-full '/>
@@ -117,15 +120,13 @@ export default function AliaQroPage() {
                 <Image src={r1} alt="" className='object-cover w-full h-full '/>
             </div>
             <div className='hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl'>
-                <Image src={r7} alt="" className='object-cover w-full h-full '/>
+                <Image src={A1} alt="" className='object-cover w-full h-full '/>
             </div>
 
         </div>
 
-        <div id="mapa" ref={mapaRef}>
-            <div className="w-full h-[450px] md:h-[650px] mt-40">
-                <iframe loading="lazy" src="https://residencialloslagos.com.mx/mapbox/mapbox.html" className="w-full h-full"></iframe>
-            </div>
+        <div id="mapa" ref={mapaRef} className="my-40 overflow-hidden">
+        <MapView />
         </div>
 
         <div id="planta" ref={plantaRef} className="container mx-auto mt-40 md:mt-0">
