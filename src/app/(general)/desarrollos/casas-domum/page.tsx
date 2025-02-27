@@ -5,22 +5,22 @@ import Link from "next/link";
 import { useRef } from "react";
 import AvanceObraSlider from "../../components/AvanceObraSlider";
 
-import hero from '@/assets/DSC00884.jpg';
-import logoDomum from '@/assets/domum color.png';
+import hero from '../../../../assets/DSC00884.jpg';
+import logoDomum from '../../../../assets/domum color.png';
 
-import G1 from '@/assets/domum/DSC00834.jpg';
-import G2 from '@/assets/domum/DSC00849.jpg';
-import G3 from '@/assets/domum/DSC00865.jpg';
-import G4 from '@/assets/domum/DSC00866.jpg';
-import G5 from '@/assets/domum/DSC00883.jpg';
-import G6 from '@/assets/domum/DSC00887.jpg';
+import G1 from '../../../../assets/domum/DSC00834.jpg';
+import G2 from '../../../../assets/domum/DSC00849.jpg';
+import G3 from '../../../../assets/domum/DSC00865.jpg';
+import G4 from '../../../../assets/domum/DSC00866.jpg';
+import G5 from '../../../../assets/domum/DSC00883.jpg';
+import G6 from '../../../../assets/domum/DSC00887.jpg';
 
-import hacienda from '@/assets/arqro/hacienda1.jpg'
-import master from '@/assets/arslp/Alía SLP 11.02.25.jpg'
+import hacienda from '../../../../assets/arqro/hacienda1.jpg'
+import master from '../../../../assets/arslp/Alía SLP 11.02.25.jpg'
 
-import ao1 from '@/assets/arslp/Alía SLP avance 1.jpg'
-import ao2 from '@/assets/arslp/DJI_20250207110258_0021_D.jpg'
-import MapView from "@/components/map/MapView";
+import ao1 from '../../../../assets/arslp/Alía SLP avance 1.jpg'
+import ao2 from '../../../../assets/arslp/DJI_20250207110258_0021_D.jpg'
+import MapView from "../../../../components/map/MapView";
 
 
 export default function AliaQroPage() {

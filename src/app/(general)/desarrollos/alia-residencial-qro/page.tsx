@@ -2,42 +2,33 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { IoCube, IoImage, IoLocation, IoMap } from "react-icons/io5";
-import { MutableRefObject, useRef } from "react";
-import { Map } from "@/components/map/Map";
+import { useRef } from "react";
 import AvanceObraSlider from "../../components/AvanceObraSlider";
 
-
-import L5 from '@/assets/arqro/24A_R9_CDM_R01_TREN_FCH1.jpg'
-import r6 from '@/assets/arqro/R01_TESSA.webp'
-import hero from '@/assets/Alia_Casa_Club.jpg'
-import logoAlia from '@/assets/Aliìa_logo_negro.png'
-import r1 from '@/assets/arqro/R01_ALIA.webp'
-import r8 from '@/assets/arqro/24A_R9_CDM_R01_TREN_FCH3.jpg'
-import PlantaB from '@/assets/planta b.png'
-import PlantaA from '@/assets/planta A.png'
-import hacienda from '@/assets/arqro/hacienda1.jpg'
-import master from '@/assets/arqro/Maste_Alia.jpg'
-import Mts from '@/assets/icono 231.29m2.png'
-import ModalImage from "react-modal-image";
-import G1 from '@/assets/arqro/acceso.webp'
-import A1 from '@/assets/24A_CDM_R08_CASA_C-1.jpg'
-import ao1 from '@/assets/arqro/DJI_20240919181642_0216_D.jpg'
-import ao2 from '@/assets/arqro/DJI_20250116114703_0239_D.jpg'
-import ao3 from '@/assets/arqro/ao20250116.jpg'
-import ao4 from '@/assets/arqro/Parte 3.jpg'
-import ao5 from '@/assets/arqro/Parte 3.1.jpg'
-import ao6 from '@/assets/arqro/ao20250213.jpg'
-import ao7 from '@/assets/arqro/ao202502132.jpg'
-import ao8 from '@/assets/arqro/ao20250214.jpg'
-import MapView from "@/components/map/MapView";
+import L5 from '../../../../assets/arqro/24A_R9_CDM_R01_TREN_FCH1.jpg'
+import r6 from '../../../../assets/arqro/R01_TESSA.webp'
+import hero from '../../../../assets/Alia_Casa_Club.jpg'
+import logoAlia from '../../../../assets/Aliìa_logo_negro.png'
+import r1 from '../../../../assets/arqro/R01_ALIA.webp'
+import r8 from '../../../../assets/arqro/24A_R9_CDM_R01_TREN_FCH3.jpg'
+import hacienda from '../../../../assets/arqro/hacienda1.jpg'
+import master from '../../../../assets/arqro/Maste_Alia.jpg'
+import G1 from '../../../../assets/arqro/acceso.webp'
+import A1 from '../../../../assets/24A_CDM_R08_CASA_C-1.jpg'
+import ao1 from '../../../../assets/arqro/DJI_20240919181642_0216_D.jpg'
+import ao2 from '../../../../assets/arqro/DJI_20250116114703_0239_D.jpg'
+import ao3 from '../../../../assets/arqro/ao20250116.jpg'
+import ao4 from '../../../../assets/arqro/Parte 3.jpg'
+import ao5 from '../../../../assets/arqro/Parte 3.1.jpg'
+import ao6 from '../../../../assets/arqro/ao20250213.jpg'
+import ao7 from '../../../../assets/arqro/ao202502132.jpg'
+import ao8 from '../../../../assets/arqro/ao20250214.jpg'
+import MapView from "../../../../components/map/MapView";
 
 
 export default function AliaQroPage() {
     const galeriaRef = useRef(null);
     const mapaRef = useRef(null);
-    const plantaRef = useRef(null);
-    const recorridoRef = useRef(null);
   
     const scrollToRef = (ref: React.RefObject<HTMLDivElement>) => {
         if (ref.current) {

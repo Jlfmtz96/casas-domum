@@ -5,22 +5,21 @@ import Link from "next/link";
 import { useRef } from "react";
 import AvanceObraSlider from "../../components/AvanceObraSlider";
 
-import hero from '@/assets/arslp/VILLAMGN_SEM_R09_AV-1.jpg';
-import logoAlia from '@/assets/Aliìa_logo_negro.png';
+import hero from '../../../../assets/arslp/VILLAMGN_SEM_R09_AV-1.jpg';
+import logoAlia from '../../../../assets/Aliìa_logo_negro.png';
 
-import G1 from '@/assets/VILLAMGN_SEM_R09_ACCESO_1.jpg';
-import G2 from '@/assets/arslp/VILLAMGN_SEM_R09_AV-2.jpg';
-import G3 from '@/assets/arslp/VILLAMGN_SEM_R09_AV-3.jpg';
-import G4 from '@/assets/arslp/VILLAMGN_SEM_R09_AV-4.jpg';
-import G5 from '@/assets/arslp/VILLAMGN_SEM_R09_VISTA_1.jpg';
-import G6 from '@/assets/arslp/VILLAMGN_SEM_R09_ACCESO_2.jpg';
+import G1 from '../../../../assets/VILLAMGN_SEM_R09_ACCESO_1.jpg';
+import G2 from '../../../../assets/arslp/VILLAMGN_SEM_R09_AV-2.jpg';
+import G3 from '../../../../assets/arslp/VILLAMGN_SEM_R09_AV-3.jpg';
+import G4 from '../../../../assets/arslp/VILLAMGN_SEM_R09_AV-4.jpg';
+import G5 from '../../../../assets/arslp/VILLAMGN_SEM_R09_VISTA_1.jpg';
+import G6 from '../../../../assets/arslp/VILLAMGN_SEM_R09_ACCESO_2.jpg';
 
-import hacienda from '@/assets/arqro/hacienda1.jpg'
-import master from '@/assets/arslp/Alía SLP 11.02.25.jpg'
+import master from '../../../../assets/arslp/Alía SLP 11.02.25.jpg'
 
-import ao1 from '@/assets/arslp/Alía SLP avance 1.jpg'
-import ao2 from '@/assets/arslp/DJI_20250207110258_0021_D.jpg'
-import MapView from "@/components/map/MapView";
+import ao1 from '../../../../assets/arslp/Alía SLP avance 1.jpg'
+import ao2 from '../../../../assets/arslp/DJI_20250207110258_0021_D.jpg'
+import MapView from "../../../../components/map/MapView";
 
 
 export default function AliaQroPage() {
