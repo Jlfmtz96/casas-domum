@@ -6,7 +6,7 @@ import { IoLocationOutline, IoLogoWhatsapp, IoMailOutline } from 'react-icons/io
 
 export const Contact = () => {
   return (
-    <section className="container mx-auto mt-40">
+    <section className="container mx-auto my-40">
         <div className="text-center">
             <span className="text-xs tracking-[0.2em] uppercase">Personas Talentosas</span>
             <h3 className="font-bold text-3xl mt-2">Conozca al equipo</h3>

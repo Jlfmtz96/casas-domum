@@ -5,22 +5,32 @@ import Link from "next/link";
 import { IoCube, IoImage, IoLocation, IoMap } from "react-icons/io5";
 import { MutableRefObject, useRef } from "react";
 import { Map } from "@/components/map/Map";
+import AvanceObraSlider from "../../components/AvanceObraSlider";
 
-import L5 from '../../../../assets/ALIA_E24A_R01_COMEDOR.jpg'
-import r6 from '../../../../assets/r6.jpeg'
-import r7 from '../../../../assets/r7.jpeg'
-import r1 from '../../../../assets/r1.jpeg'
-import r8 from '../../../../assets/r8.jpg'
-import PlantaB from '../../../../assets/planta b.png'
-import PlantaA from '../../../../assets/planta A.png'
-import Alia from '../../../../assets/icono_icono_verde.png'
-import Terreno from '../../../../assets/icono 160m2.png'
-import Mts from '../../../../assets/icono 231.29m2.png'
+
+import L5 from '@/assets/arqro/24A_R9_CDM_R01_TREN_FCH1.jpg'
+import r6 from '@/assets/arqro/R01_TESSA.webp'
+import hero from '@/assets/Alia_Casa_Club.jpg'
+import logoAlia from '@/assets/Aliìa_logo_negro.png'
+import r1 from '@/assets/arqro/R01_ALIA.webp'
+import r8 from '@/assets/arqro/24A_R9_CDM_R01_TREN_FCH3.jpg'
+import PlantaB from '@/assets/planta b.png'
+import PlantaA from '@/assets/planta A.png'
+import hacienda from '@/assets/arqro/hacienda1.jpg'
+import master from '@/assets/arqro/Maste_Alia.jpg'
+import Mts from '@/assets/icono 231.29m2.png'
 import ModalImage from "react-modal-image";
-import G1 from '@/assets/24A_CDM_R02B_VISTA_1.png'
+import G1 from '@/assets/arqro/acceso.webp'
 import A1 from '@/assets/24A_CDM_R08_CASA_C-1.jpg'
-import { MapView } from "@/components/map/MapView";
-
+import ao1 from '@/assets/arqro/DJI_20240919181642_0216_D.jpg'
+import ao2 from '@/assets/arqro/DJI_20250116114703_0239_D.jpg'
+import ao3 from '@/assets/arqro/ao20250116.jpg'
+import ao4 from '@/assets/arqro/Parte 3.jpg'
+import ao5 from '@/assets/arqro/Parte 3.1.jpg'
+import ao6 from '@/assets/arqro/ao20250213.jpg'
+import ao7 from '@/assets/arqro/ao202502132.jpg'
+import ao8 from '@/assets/arqro/ao20250214.jpg'
+import MapView from "@/components/map/MapView";
 
 
 export default function AliaQroPage() {
@@ -34,28 +44,63 @@ export default function AliaQroPage() {
             ref.current.scrollIntoView({ behavior: 'smooth' });
         }
     };
-    
+
+    const avances = [
+        { image: ao1, date: '2024-09-19' },
+        { image: ao2, date: '2025-01-16' },
+        { image: ao3, date: '2025-01-16' },
+        { image: ao4, date: '2025-02-15' },
+        { image: ao5, date: '2025-02-16' },
+        { image: ao6, date: '2025-02-16' },
+        { image: ao7, date: '2025-02-16' },
+        { image: ao8, date: '2025-02-16' },
+    ];
+
+    // Coordenadas iniciales del mapa
+    const initialViewState = {
+        longitude: -100.31347130980191,
+        latitude: 20.596930607764385,
+        zoom: 13,
+    };
+
+    // Marcadores para el mapa
+    const markers = [
+        {
+            longitude: -100.31347130980191,
+            latitude: 20.596930607764385,
+            link: 'https://maps.app.goo.gl/TLFyNmJDZMGgFVLN6', // Enlace opcional
+        },
+        // Agrega más marcadores según sea necesario
+    ];
     
   return (
-    <section className="mt-40">
-        <div className="container mx-auto">
+    <section>
+        <div className="h-screen w-full overflow-hidden">
+            <Image src={hero} alt="" layout="fill" objectFit="cover" />
+        </div>
 
-            <div className="px-4 lg:px-44 flex space-x-5">
-                <div>
-                    <Image src={Alia} alt="" width={100}/>
+        <div className="container mx-auto">
+            <div className="px-4 lg:px-0">
+                <div className="flex gap-2 md:gap-4 mt-4 mb-20">
+                    <Link href={'/desarrollos'} className="font-sans text-gray-500 text-sm md:text-base hover:underline">Desarrollos</Link>
+                    <span>/</span>
+                    <Link href={'/desarrollos/alia-residencial-qro'} className="font-sans text-sm md:text-base text-pink-500 hover:underline">Alía Residencial Querétaro</Link>
                 </div>
+
+
                 <div>
-                    <span className='text-xs tracking-[0.2em] uppercase'>NUESTROS DESARROLLOS</span>
-                    <h3 className='font-bold text-3xl md:text-5xl mt-2'>ALIA Residencial</h3>
+                    <Image src={logoAlia} alt='' width={220} height={220} className='mb-4' />
+                    <span className='uppercase tracking-[1.1em] font-medium'>Querétaro</span>
+                </div>
+
+                <div className='container mx-auto lg:px-96 text-xl lg:text-3xl mt-16'>
+                    ¡Bienvenido a Alia Residencial! Te invitamos a conocer nuestro nuevo proyecto, pensado para que tú y tu familia hagan realidad el sueño de tener un hogar propio. Disfruta de espaciosas casas con acabados de excelente calidad, rodeadas de áreas verdes y amenidades excepcionales. ¡Tu nuevo estilo de vida te espera!
                 </div>
             </div>
         </div>
 
-        <div className="container mx-auto mt-16">
+        {/* <div className="container mx-auto mt-16 lg:mt-28 hidden md:block">
             <div id="info" className=" p-10 relative">
-                <div className="">
-                    <p className="text-justify text-sm">Lorem ipsum dolor sit amet, consectetur adipis lot cing elit, sed doeiusmod tempor incididunt ut stit labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-                </div>
                 <div className="mt-10 mb-4 2xl:my-10">
                     <p className="mt-6 text-sm"><span className="font-bold text-base text-slate-700 uppercase mr-4">Fecha:</span> Mayo - 21 - 2018</p>
                     <p className="mt-6 text-sm"><span className="font-bold text-base text-slate-700 uppercase mr-4">Estatus:</span>Terminado</p>
@@ -101,14 +146,18 @@ export default function AliaQroPage() {
                     </Link>
                 </div>
             </div>
-        </div>
+        </div> */}
 
-        <div id="galeria" className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-2 px-2" ref={galeriaRef}>
+        <div className="container mx-auto px-4 lg:px-0 text-2xl font-sans font-medium mt-16 lg:mt-28">
+            Galería
+        </div>
+        {/* <h3 className="text-2xl font-sans font-medium mb-4">Galeria</h3> */}
+        <div id="galeria" className="mt-4 grid md:grid-cols-2 lg:grid-cols-3 gap-2 px-4 lg:px-2" ref={galeriaRef}>
             <div className='hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl'>
                 <Image src={G1} alt="" className='object-cover w-full h-full ' />
             </div>
             <div className='hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl'>
-                <Image src={r6} alt="" className='object-cover w-full h-full '/>
+                <Image src={r1} alt="" className='object-cover w-full h-full '/>
             </div>
             <div className='hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl'>
                 <Image src={L5} alt="" className='object-cover w-full h-full '/>
@@ -117,7 +166,7 @@ export default function AliaQroPage() {
                 <Image src={r8} alt="" className='object-cover w-full h-full '/>
             </div>
             <div className='hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl'>
-                <Image src={r1} alt="" className='object-cover w-full h-full '/>
+                <Image src={r6} alt="" className='object-cover w-full h-full '/>
             </div>
             <div className='hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl'>
                 <Image src={A1} alt="" className='object-cover w-full h-full '/>
@@ -125,64 +174,68 @@ export default function AliaQroPage() {
 
         </div>
 
-        <div id="mapa" ref={mapaRef} className="my-40 overflow-hidden">
-        <MapView />
-        </div>
+        <div className="container mx-auto mt-16 lg:mt-28 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center px-4 lg:px-0">
+            <div className="lg:pr-20">
+                <h3 className="font-medium text-4xl lg:text-5xl">Descubre un estilo de vida exclusivo</h3>
+                <p className="text-lg font-sans my-6 lg:mt-16">94 residencias diseñadas para ofrecerte comodidad, privacidad y tranquilidad. Cada uno de nuestros siete modelos de casas, cuenta con espacios amplios y distribuciones inteligentes, perfectas para disfrutar de tu día a día.</p>
 
-        <div id="planta" ref={plantaRef} className="container mx-auto mt-40 md:mt-0">
-            <h2 className='font-bold text-5xl text-center'>Plantas</h2>
-            <div className="mt-16 md:flex md:space-x-6">
-                <div className="md:w-1/2 bg-slate-100 p-8">
-                    <div className="flex justify-center">
-                        <ModalImage small={PlantaB.src} large={PlantaB.src} alt="" className="h-auto w-[250px]"/>
-                    </div>
-                    <div>
-                        <div className="flex my-10 items-center justify-between">
-                            <h3 className='font-bold text-2xl'>Planta Baja</h3>
-                            <span className='border-b-2 w-1/2 2xl:w-3/4'></span>
+                <Link
+                    href="https://aliaresidencial.mx/"
+                    className="border p-4 text-sm flex items-center justify-between group relative overflow-hidden w-52"
+                    >
+                    {/* Texto "Ver más" */}
+                    <span className="transition-all duration-300 group-hover:-translate-x-full group-hover:opacity-0">
+                        Alía Residencial
+                    </span>
+
+                    {/* Contenedor de la línea y la flecha */}
+                    <div className="relative flex items-center justify-end flex-1">
+                        {/* Línea que crece */}
+                        <div className="absolute right-0 h-[2px] bg-black rounded-full transition-all duration-300 w-10 group-hover:w-44">
+                        {/* <div className="w-10 h-full bg-black transition-all duration-300 group-hover:w-full"></div> */}
                         </div>
-                        <div className="grid grid-cols-2 lg:grid-cols-3 gap-10">
-                            <div>🚗 Cochera</div>
-                            <div>🛋 Sala</div>
-                            <div>🍴 Comedor</div>
-                            <div>🍳 Cocina</div>
-                            <div>🛁 1 Baño</div>
-                            <div>🚽 1/2 Baño</div>
-                            <div>🛏 1 Recámara</div>
-                            <div>🧺 Área de Servicio</div>
-                            <div>🏡 Jardín</div>
 
-                        </div>
+                        {/* Flecha SVG */}
+                        <svg
+                        fill="none"
+                        height="12"
+                        width="7"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="ml-2"
+                        >
+                        <path
+                            d="M5 5.25a.75.75 0 0 0 0 1.5v-1.5Zm1.53 1.28a.75.75 0 0 0 0-1.06L1.757.697a.75.75 0 0 0-1.06 1.06L4.939 6 .697 10.243a.75.75 0 0 0 1.06 1.06L6.53 6.53ZM5 6.75h1v-1.5H5v1.5Z"
+                            fill="currentColor"
+                        ></path>
+                        </svg>
                     </div>
-
-                </div>
-                <div className="md:w-1/2 mt-16 md:mt-0 bg-slate-100 p-8">
-                    <div className="flex justify-center">
-                    <ModalImage small={PlantaA.src} large={PlantaA.src} alt="" className="h-auto w-[250px]"/>
-                    </div>
-
-                    <div>
-                        <div className="flex my-10 items-center justify-between">
-                            <h3 className='font-bold text-2xl'>Planta Alta</h3>
-                            <span className='border-b-2 w-1/2 2xl:w-3/4'></span>
-                        </div>
-                        <div className="grid grid-cols-2 lg:grid-cols-3 gap-10">
-                            <div>⬜ Balcón</div>
-                            <div>🛏 2 Recámaras</div>
-                            <div>🛁 2 Baños</div>
-                            <div>📺 Área de TV</div>
-                            <div>👗 vestidor</div>
-                        </div>
-                    </div>
-
-                </div>
+                </Link>
             </div>
+            <div className="relative min-h-96 lg:min-h-[40rem] overflow-hidden">
+                <Image src={master} alt="" layout="fill" objectFit="cover" objectPosition="left" />
+            </div>            
         </div>
 
-        <div id="recorrido" ref={recorridoRef} className="container mx-auto mt-40">
-            <h2 className='font-bold text-5xl text-center'>Recorrido 360°</h2>
-            <div id="praga" className="mt-16"></div>
-            <iframe src="https://my.matterport.com/show/?m=DsTeEwQvgrm" width="100%" height="700px" frameBorder="0" allowFullScreen></iframe>
+        <div className="container mx-auto mt-16 lg:mt-28 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center px-4 lg:px-0">
+            <div className="relative min-h-96 lg:min-h-[40rem] overflow-hidden">
+                <Image src={hacienda} alt="" layout="fill" objectFit="cover" />
+            </div>    
+            <div className="lg:pl-20">
+                <h3 className="font-medium text-4xl lg:text-5xl">Comparte momentos únicos</h3>
+                <p className="text-lg font-sans mt-6 lg:mt-16">Ubicado a solo unos pasos de Alía Residencial, el desarrollo cuenta con una amplia gama de amenidades diseñadas para brindarte comodidad, entretenimiento y bienestar en un solo lugar.</p>
+                <p className="text-lg font-sans mt-6">La Hacienda Corralejo cuenta con un restaurante y bar donde podrás disfrutar de deliciosos platillos y bebidas, una terraza al aire libre para relajarte y un lobby elegante que marca la calidad del desarrollo. Además, encontrarás espacios comunes, una capilla, un patio con áreas verdes para descansar y un futuro salón de eventos.</p>
+
+                <p className="text-lg font-sans">Además, disfrutarás de un parque lineal para paseos al aire libre y un mirador con vistas impresionantes, brindando un entorno perfecto para tu día a día.</p>
+                <p className="text-lg font-sans">Haz de Alía Residencial tu nuevo hogar y vive rodeado de lo mejor, donde cada detalle está pensado para ti.</p>
+            </div>        
+        </div>
+
+        <div className="container mx-auto my-16 px-2 lg:px-0">
+            <AvanceObraSlider avances={avances} />
+        </div>
+
+        <div id="mapa" ref={mapaRef} className="overflow-hidden">
+            <MapView initialViewState={initialViewState} markers={markers} />
         </div>
 
     </section>

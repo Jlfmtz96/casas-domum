@@ -3,8 +3,8 @@ import Image from "next/image"
 import { Slide } from "./Slide"
 import { IoLogoFacebook, IoLogoInstagram, IoLogoTiktok, IoLogoTwitter, IoLogoYoutube } from "react-icons/io5";
 
-import Cdm from "../../assets/cdm.jpg"
-import Villa from "../../assets/VillaMagna.jpg"
+import Cdm from "../../assets/04_CASETA_DE_ACCESO.jpg"
+import Villa from "../../assets/VILLAMGN_SEM_R09_ACCESO_1.jpg"
 
 
 
@@ -20,14 +20,14 @@ const images = [
       /* url: 'https://freebw.com/templates/tatee/images/slide-06.jpg', */
       imagen: Cdm.src,
       url: '/desarrollos/alia-residencial-qro',
-      title: 'Alia Residencial',
+      title: 'Alía Residencial',
       location: 'Querétaro, México'
   },
   {
       /* url: 'https://freebw.com/templates/tatee/images/slide-07.jpg', */
       imagen: Villa.src,
-      url: '/desarrollos/alia-residencial-qro',
-      title: 'Alia Residencial',
+      url: '/desarrollos/alia-residencial-slp',
+      title: 'Alía Residencial',
       location: 'San Luis Potosí, México'
   },
 ];
@@ -39,12 +39,12 @@ export const Hero = () => {
         <Slide images={images} />
         <footer className="hidden md:flex absolute bottom-28 md:right-12 xl:right-20  2xl:right-48 z-30">
           <div className="text-white">
-              <div className="my-10">
+              {/* <div className="my-10">
                   <a href="https://es-la.facebook.com/COMEBI.MX/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C91E7B]">
                       <IoLogoTiktok className="w-[16px] h-[16px]" />
                   </a>
-              </div>
-              <div className="my-10">
+              </div> */}
+              {/* <div className="my-10">
                   <a href="https://es-la.facebook.com/COMEBI.MX/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C91E7B]">
                       <IoLogoYoutube className="w-[16px] h-[16px]"/>
                   </a>
@@ -53,7 +53,7 @@ export const Hero = () => {
                   <a href="https://es-la.facebook.com/COMEBI.MX/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C91E7B]">
                       <IoLogoTwitter className="w-[16px] h-[16px]" />
                   </a>
-              </div>
+              </div> */}
               <div className="my-10">
                   <a href="https://www.instagram.com/tu.casa.comebi/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C91E7B]">
                       <IoLogoInstagram className="w-[16px] h-[16px]" />

@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export const Footer = () => {
   return (
-    <div className="relative mt-40 py-10 w-full bg-neutral-900">
+    <div className="relative py-10 w-full bg-neutral-900">
         <div className="absolute inset-0 bg-fuchsia-400 bg-[size:20px_20px] opacity-20 blur-[100px]"></div>
         <div className='absolute inset-0 h-full w-full z-0'>
             <Image src={Lagos} alt="" className='object-cover  w-full h-full  opacity-40' />
@@ -18,8 +18,8 @@ export const Footer = () => {
                         </a>
                     </div>
                     <div className='mt-6 text-sm'>
-                        <p className='mt-2'>Address : Quéretaro , México</p>
-                        <p className='mt-2'>Phone number : + (898) 784-7217</p>
+                        <p className='mt-2'>Dirección : Quéretaro , México</p>
+                        <p className='mt-2'>Teléfono : + (898) 784-7217</p>
                         <p className='mt-2'>Email : casasdomum@gmail.com</p>
                     </div>
                 </div>
@@ -32,7 +32,6 @@ export const Footer = () => {
                         <ul className="[&>li>a]:text-current [&>li>a]:inline-block [&>li>a]:mt-2">
                             <li><a href="#" className='hover:text-[#C91E7B]'>Nosotros</a></li>
                             <li><a href="#" className='hover:text-[#C91E7B]'>Desarrollos</a></li>
-                            <li><a href="#" className='hover:text-[#C91E7B]'>Blog</a></li>
                             <li><a href="#" className='hover:text-[#C91E7B]'>Contacto</a></li>
                         </ul>
                     </div>
@@ -55,7 +54,7 @@ export const Footer = () => {
                         <h2 className='font-bold uppercase text-lg'>Copyright</h2>
                     </div>
                     <div className='mt-2 lg:mt-6 text-sm'>
-                        <p>&copy; 2024 Casas Domum. Diseñada por MagaDev</p>
+                        <p>&copy; 2025 Casas Domum</p>
                     </div>
                 </div>
 

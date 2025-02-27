@@ -43,24 +43,23 @@ export const NavBar = () => {
     return (
         <div>
             <header 
-            className={`py-6 px-10 fixed top-0 w-full justify-between z-40 transition-all duration-300 ease-in-out ${
-            isScrolled ? 'bg-white opacity-90' : ''
-            }`}>
-                <div className="container mx-auto flex items-center">
-                    <div className="flex flex-grow basis-0">
-                        <a href="/">
-                            <Image src={ LogoColor } alt="" className={`w-36 transition-all duration-300 ease-in-out ${isScrolled ? 'filter-invert' : ''}`}/>
-                            {/* <h1 className='text-3xl font-bold'>Domum</h1> */}
-                        </a>
-                    </div>
+            className='py-6 px-10 fixed top-0 w-full justify-between z-40 bg-white'>
+                <div className="container mx-auto">
 
-                    <nav className="flex flex-grow basis-0 justify-end lg:justify-between">
-                        <a href="" className='hidden lg:flex'>
+                    <nav className="flex flex-grow basis-0 justify-end lg:justify-between items-center">
+                        {/* <a href="" className='hidden lg:flex'>
                             Tel : + (898) 784 -7218
                         </a>
                         <a href="" className='hidden lg:flex'>
                             casasdomum@gmail.com
-                        </a>
+                        </a> */}
+                        <div className="flex flex-grow basis-0">
+                            <a href="/">
+                                <Image src={ LogoColor } alt="" className={`w-36 transition-all duration-300 ease-in-out ${isScrolled ? 'filter-invert' : ''}`}/>
+                                {/* <h1 className='text-3xl font-bold'>Domum</h1> */}
+                            </a>
+                        </div>
+
                         <button className={`border-[1px] p-1`} onClick={toggleMenu}>
                             <IoMenuOutline className="h-5 w-5" />
                         </button>
@@ -79,6 +78,11 @@ export const NavBar = () => {
                                     </div>
                                     <ul className="mt-12 [&>li>a]:text-current [&>li>a]:font-bold [&>li>a]:block [&>li>a]:pr-32 [&>li>a]:py-4">
                                         <li>
+                                            <Link href="/" className="hover:text-[#C91E7B]" onClick={closeMenu}>
+                                                Inicio
+                                            </Link>
+                                        </li>
+                                        <li>
                                         <Link href="/nosotros" className="hover:text-[#C91E7B]" onClick={closeMenu}>
                                             Nosotros
                                         </Link>
@@ -89,27 +93,28 @@ export const NavBar = () => {
                                         </Link>
                                         </li>
                                         <li>
-                                        <Link href="/blog" className="hover:text-[#C91E7B]" onClick={closeMenu}>
+                                        {/* <Link href="/blog" className="hover:text-[#C91E7B]" onClick={closeMenu}>
                                             Blog
-                                        </Link>
+                                        </Link> */}
                                         </li>
                                         <li>
                                         <Link href="/contacto" className="hover:text-[#C91E7B]" onClick={closeMenu}>
                                             Contacto
                                         </Link>
                                         </li>
+                                        <li className="mt-16 text-base">
+                                        <Link href="/contacto" className="hover:text-[#C91E7B]">
+                                            (444) 784-7217
+                                        </Link>
+                                        </li>
+                                        <li className="text-base">
+                                        <Link href="/contacto" className="hover:text-[#C91E7B]">
+                                            casasdomum@gmail.com
+                                        </Link>
+                                        </li>
                                     </ul>
 
                                     <div className="flex space-x-8 mt-40">
-                                        <a href="https://es-la.facebook.com/COMEBI.MX/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C91E7B]">
-                                            <IoLogoTiktok className="w-5 h-5" />
-                                        </a>
-                                        <a href="https://es-la.facebook.com/COMEBI.MX/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C91E7B]">
-                                            <IoLogoYoutube className="w-5 h-5"/>
-                                        </a>
-                                        <a href="https://es-la.facebook.com/COMEBI.MX/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C91E7B]">
-                                            <IoLogoTwitter className="w-5 h-5" />
-                                        </a>
                                         <a href="https://www.instagram.com/tu.casa.comebi/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C91E7B]">
                                             <IoLogoInstagram className="w-5 h-5" />
                                         </a>
