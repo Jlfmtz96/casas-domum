@@ -4,26 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 import AvanceObraSlider from "../../components/AvanceObraSlider";
-
-
-import L5 from '@/assets/arqro/24A_R9_CDM_R01_TREN_FCH1.jpg'
-import r6 from '@/assets/arqro/R01_TESSA.webp'
-import hero from '@/assets/Alia_Casa_Club.jpg'
-import logoAlia from '@/assets/Aliìa_logo_negro.png'
-import r1 from '@/assets/arqro/R01_ALIA.webp'
-import r8 from '@/assets/arqro/24A_R9_CDM_R01_TREN_FCH3.jpg'
-import hacienda from '@/assets/arqro/hacienda1.jpg'
-import master from '@/assets/arqro/Maste_Alia.jpg'
-import G1 from '@/assets/arqro/acceso.webp'
-import A1 from '@/assets/24A_CDM_R08_CASA_C-1.jpg'
-import ao1 from '@/assets/arqro/DJI_20240919181642_0216_D.jpg'
-import ao2 from '@/assets/arqro/DJI_20250116114703_0239_D.jpg'
-import ao3 from '@/assets/arqro/ao20250116.jpg'
-import ao4 from '@/assets/arqro/Parte 3.jpg'
-import ao5 from '@/assets/arqro/Parte 3.1.jpg'
-import ao6 from '@/assets/arqro/ao20250213.jpg'
-import ao7 from '@/assets/arqro/ao202502132.jpg'
-import ao8 from '@/assets/arqro/ao20250214.jpg'
 import MapView from "@/components/map/MapView";
 
 
@@ -38,14 +18,14 @@ export default function AliaQroPage() {
     };
 
     const avances = [
-        { image: ao1, date: '2024-09-19' },
-        { image: ao2, date: '2025-01-16' },
-        { image: ao3, date: '2025-01-16' },
-        { image: ao4, date: '2025-02-15' },
-        { image: ao5, date: '2025-02-16' },
-        { image: ao6, date: '2025-02-16' },
-        { image: ao7, date: '2025-02-16' },
-        { image: ao8, date: '2025-02-16' },
+        { image: '/assets/arqro/DJI_20240919181642_0216_D.jpg', date: '2024-09-19' },
+        { image: '/assets/arqro/DJI_20250116114703_0239_D.jpg', date: '2025-01-16' },
+        { image: '/assets/arqro/ao20250116.jpg', date: '2025-01-16' },
+        { image: '/assets/arqro/Parte 3.jpg', date: '2025-02-15' },
+        { image: '/assets/arqro/Parte 3.1.jpg', date: '2025-02-16' },
+        { image: '/assets/arqro/ao20250213.jpg', date: '2025-02-16' },
+        { image: '/assets/arqro/ao202502132.jpg', date: '2025-02-16' },
+        { image: '/assets/arqro/ao20250214.jpg', date: '2025-02-16' },
     ];
 
     // Coordenadas iniciales del mapa
@@ -68,7 +48,7 @@ export default function AliaQroPage() {
   return (
     <section>
         <div className="h-screen w-full overflow-hidden">
-            <Image src={hero} alt="" layout="fill" objectFit="cover" />
+            <Image src={'/assets/Alia_Casa_Club.jpg'} alt="" layout="fill" objectFit="cover" />
         </div>
 
         <div className="container mx-auto">
@@ -81,7 +61,7 @@ export default function AliaQroPage() {
 
 
                 <div>
-                    <Image src={logoAlia} alt='' width={220} height={220} className='mb-4' />
+                    <Image src={'/assets/Aliìa_logo_negro.png'} alt='' width={220} height={220} className='mb-4' />
                     <span className='uppercase tracking-[1.1em] font-medium'>Querétaro</span>
                 </div>
 
@@ -145,23 +125,23 @@ export default function AliaQroPage() {
         </div>
         {/* <h3 className="text-2xl font-sans font-medium mb-4">Galeria</h3> */}
         <div id="galeria" className="mt-4 grid md:grid-cols-2 lg:grid-cols-3 gap-2 px-4 lg:px-2" ref={galeriaRef}>
-            <div className='hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl'>
-                <Image src={G1} alt="" className='object-cover w-full h-full ' />
+            <div className='relative hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl h-96 w-full'>
+                <Image src={'/assets/arqro/acceso.webp'} alt="" layout="fill" objectFit="cover" />
             </div>
-            <div className='hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl'>
-                <Image src={r1} alt="" className='object-cover w-full h-full '/>
+            <div className='relative hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl h-96 w-full'>
+                <Image src={'/assets/arqro/R01_ALIA.webp'} alt="" layout="fill" objectFit="cover"/>
             </div>
-            <div className='hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl'>
-                <Image src={L5} alt="" className='object-cover w-full h-full '/>
+            <div className='relative hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl h-96 w-full'>
+                <Image src={'/assets/arqro/24A_R9_CDM_R01_TREN_FCH1.jpg'} alt="" layout="fill" objectFit="cover"/>
             </div>
-            <div className='hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl'>
-                <Image src={r8} alt="" className='object-cover w-full h-full '/>
+            <div className='relative hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl h-96 w-full'>
+                <Image src={'/assets/arqro/24A_R9_CDM_R01_TREN_FCH3.jpg'} alt="" layout="fill" objectFit="cover"/>
             </div>
-            <div className='hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl'>
-                <Image src={r6} alt="" className='object-cover w-full h-full '/>
+            <div className='relative hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl h-96 w-full'>
+                <Image src={'/assets/arqro/R01_TESSA.webp'} alt="" layout="fill" objectFit="cover"/>
             </div>
-            <div className='hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl'>
-                <Image src={A1} alt="" className='object-cover w-full h-full '/>
+            <div className='relative hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl h-96 w-full'>
+                <Image src={'/assets/24A_CDM_R08_CASA_C-1.jpg'} alt="" layout="fill" objectFit="cover"/>
             </div>
 
         </div>
@@ -204,13 +184,13 @@ export default function AliaQroPage() {
                 </Link>
             </div>
             <div className="relative min-h-96 lg:min-h-[40rem] overflow-hidden">
-                <Image src={master} alt="" layout="fill" objectFit="cover" objectPosition="left" />
+                <Image src={'/assets/arqro/Maste_Alia.jpg'} alt="" layout="fill" objectFit="cover" objectPosition="left" />
             </div>            
         </div>
 
         <div className="container mx-auto mt-16 lg:mt-28 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center px-4 lg:px-0">
             <div className="relative min-h-96 lg:min-h-[40rem] overflow-hidden">
-                <Image src={hacienda} alt="" layout="fill" objectFit="cover" />
+                <Image src={'/assets/arqro/hacienda1.jpg'} alt="" layout="fill" objectFit="cover" />
             </div>    
             <div className="lg:pl-20">
                 <h3 className="font-medium text-4xl lg:text-5xl">Comparte momentos únicos</h3>

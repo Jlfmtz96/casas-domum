@@ -1,15 +1,7 @@
 import { Banner, Contact, Footer, Hero, NavBar } from "@/components";
 import Image from "next/image";
-
-import casas from '../assets/Casas Qro.jpg';
-import Artigas from '../assets/Artigas_Logo.svg';
-import lagos from '../assets/E1E5D2AE-DD7F-4B6D-8E07-D487F3C1071B.jpg';
-import vm from '../assets/arslp/VILLAMGN_SEM_R09_ACCESO_2.jpg';
-import qro from '../assets/acceso.webp';
-import Alia from '../assets/icono_icono_blanco.png';
-import logoAlia from '../assets/Aliìa_logo_blanco.png'
-import Domum from '../assets/domum bl.png';
 import Link from "next/link";
+
 
 const Especialidad = [
   { ruta: 'https://freebw.com/templates/tatee/images/icon/service-01.png', texto: 'Arquitectura' },
@@ -19,7 +11,7 @@ const Especialidad = [
 ];
 
 const Firmas = [
-  { ruta: Artigas, texto: '' },
+  { ruta: '/assets/Artigas_Logo.svg', texto: '' },
 ];
 
 export default function Home() {
@@ -32,7 +24,7 @@ export default function Home() {
       <section className='container mx-auto mt-40'>
         <div className="lg:flex lg:space-x-12">
             <div className='relative lg:w-1/2 min-h-96 lg:min-h-[40rem] overflow-hidden'>
-                <Image src={casas} alt="" layout="fill" objectFit="cover"/>
+                <Image src={'/assets/Casas Qro.jpg'} alt="" layout="fill" objectFit="cover"/>
             </div>
             <div className='lg:w-1/2 px-8 lg:px-0 mt-10'>
                 <span className='text-xs tracking-[0.2em] uppercase'>Somos <h1 className="inline-flex">Casas Domum</h1></span>
@@ -83,16 +75,16 @@ export default function Home() {
         <div className="mt-20 grid lg:grid-cols-2 gap-8">
             <Link href='/desarrollos/alia-residencial-qro' className='group relative'>
                 <div className='min-h-96 lg:min-h-[40rem] overflow-hidden'>
-                    <Image src={qro} alt="" layout="fill" objectFit="cover" objectPosition="left" />
+                    <Image src={'/assets/acceso.webp'} alt="" layout="fill" objectFit="cover" objectPosition="left" />
                 </div>
                 <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white flex flex-col items-center'>
-                    <Image src={Alia} width={200} height={200} alt="" />
+                    <Image src={'/assets/icono_icono_blanco.png'} width={200} height={200} alt="" />
                     <span className='text-sm uppercase tracking-[1.2em] mt-2'>Querétaro</span>
                 </div>
                 <div className="hidden lg:block absolute top-0 left-0 bg-pink-500 text-white w-full h-full p-10 lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity">
                     <div className="flex h-full flex-col items-start justify-between">
                         <div>
-                            <Image src={logoAlia} width={200} height={200} alt="" />
+                            <Image src={'/assets/Aliìa_logo_blanco.png'} width={200} height={200} alt="" />
                             <span className='text-sm uppercase tracking-[1.2em] mt-2'>Querétaro</span>
                         </div>
 
@@ -127,16 +119,16 @@ export default function Home() {
 
             <Link href='/desarrollos/alia-residencial-slp' className='group relative'>
                 <div className='min-h-96 lg:min-h-[40rem] overflow-hidden'>
-                    <Image src={vm} alt="" layout="fill" objectFit="cover" objectPosition="left" />
+                    <Image src={'/assets/arslp/VILLAMGN_SEM_R09_ACCESO_2.jpg'} alt="" layout="fill" objectFit="cover" objectPosition="left" />
                 </div>
                 <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white flex flex-col items-center'>
-                    <Image src={Alia} width={200} height={200} alt="" />
+                    <Image src={'/assets/icono_icono_blanco.png'} width={200} height={200} alt="" />
                     <span className='text-sm uppercase tracking-[0.8em] mt-2'>San Luis Potosí</span>
                 </div>
                 <div className="hidden lg:block absolute top-0 left-0 bg-pink-500 text-white w-full h-full p-10 lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity">
                     <div className="flex h-full flex-col items-start justify-between">
                         <div>
-                            <Image src={logoAlia} width={200} height={200} alt="" />
+                            <Image src={'/assets/Aliìa_logo_blanco.png'} width={200} height={200} alt="" />
                             <span className='text-sm uppercase tracking-[0.5em] mt-2'>San Luis Potosí</span>
                         </div>
 
@@ -194,17 +186,17 @@ export default function Home() {
             </div>
             <Link href={'/desarrollos/casas-domum'} className='group relative lg:col-span-2'>
                 <div className='min-h-96 lg:min-h-[40rem] overflow-hidden'>
-                    <Image src={lagos} alt="" layout="fill" objectFit="cover" />
+                    <Image src={'/assets/E1E5D2AE-DD7F-4B6D-8E07-D487F3C1071B.jpg'} alt="" layout="fill" objectFit="cover" />
                 </div>
                 <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white'>
-                    <Image src={Domum} width={300} height={300} alt="" />
+                    <Image src={'/assets/domum bl.png'} width={300} height={300} alt="" />
                     <span className='text-sm uppercase tracking-[0.2em]'>Los Lagos, San Luis Potosí</span>
                 </div>
 
                 <div className="hidden lg:block absolute top-0 left-0 bg-pink-500 text-white w-full h-full p-10 lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity">
                     <div className="flex h-full flex-col items-start justify-between">
                         <div>
-                            <Image src={Domum} width={200} height={200} alt="" />
+                            <Image src={'/assets/domum bl.png'} width={200} height={200} alt="" />
                             <span className='text-sm uppercase tracking-[0.5em] mt-2'>San Luis Potosí</span>
                         </div>
 

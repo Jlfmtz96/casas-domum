@@ -14,9 +14,9 @@ export const Contact = () => {
         <div className="mt-20 flex justify-center">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-20 lg:gap-40">
                 <div>
-                    <div className="relative group h-60 w-60 rounded-full overflow-hidden flex items-center">
+                    <div className="relative group h-60 w-60 rounded-full overflow-hidden flex items-center justify-center">
                         <a href="">
-                            <Image src={map} alt='' />
+                            <Image src={'/assets/map-isometric.svg'} alt='' width={250} height={250} />
                         </a>
                         <div className="absolute inset-0 rounded-full bg-black clip-circle opacity-0 group-hover:opacity-50 transition-opacity">
 
@@ -36,9 +36,9 @@ export const Contact = () => {
                 </div>
 
                 <div>
-                    <div className="relative group h-60 w-60 rounded-full overflow-hidden flex items-center">
+                    <div className="relative group h-60 w-60 rounded-full overflow-hidden flex items-center justify-center">
                         <a href="">
-                            <Image src={chat} alt='' />
+                            <Image src={'/assets/undraw_chatting_re_j55r.svg'} alt='' width={250} height={250} />
                         </a>
                         <div className="absolute inset-0 rounded-full bg-black clip-circle opacity-0 group-hover:opacity-50 transition-opacity">
                         </div>
@@ -57,9 +57,9 @@ export const Contact = () => {
                 </div>
 
                 <div>
-                    <div className="relative group h-60 w-60 rounded-full overflow-hidden flex items-center">
+                    <div className="relative group h-60 w-60 rounded-full overflow-hidden flex items-center justify-center">
                         <a href="">
-                            <Image src={email} alt='' />
+                            <Image src={'/assets/sent-messages-isometric.svg'} alt='' width={250} height={250} />
                         </a>
                         <div className="absolute inset-0 rounded-full bg-black clip-circle opacity-0 group-hover:opacity-50 transition-opacity">
                         </div>

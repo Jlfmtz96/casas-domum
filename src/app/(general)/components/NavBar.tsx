@@ -55,7 +55,7 @@ export const NavBar = () => {
                         </a> */}
                         <div className="flex flex-grow basis-0">
                             <a href="/">
-                                <Image src={ LogoColor } alt="" className={`w-36 transition-all duration-300 ease-in-out ${isScrolled ? 'filter-invert' : ''}`}/>
+                                <Image src={ '/assets/domum color.png' } alt="" className={`transition-all duration-300 ease-in-out ${isScrolled ? 'filter-invert' : ''}`} width={120} height={120} />
                                 {/* <h1 className='text-3xl font-bold'>Domum</h1> */}
                             </a>
                         </div>

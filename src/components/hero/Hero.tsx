@@ -18,14 +18,14 @@ const images = [
 //   },
   {
       /* url: 'https://freebw.com/templates/tatee/images/slide-06.jpg', */
-      imagen: Cdm.src,
+      imagen: '/assets/04_CASETA_DE_ACCESO.jpg',
       url: '/desarrollos/alia-residencial-qro',
       title: 'Alía Residencial',
       location: 'Querétaro, México'
   },
   {
       /* url: 'https://freebw.com/templates/tatee/images/slide-07.jpg', */
-      imagen: Villa.src,
+      imagen: '/assets/VILLAMGN_SEM_R09_ACCESO_1.jpg',
       url: '/desarrollos/alia-residencial-slp',
       title: 'Alía Residencial',
       location: 'San Luis Potosí, México'

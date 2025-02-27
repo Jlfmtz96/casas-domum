@@ -30,7 +30,7 @@ export default function DesarrollosPage() {
                 <div className='flex flex-col gap-20'>
                     <div className='grid grid-cols-2 gap-20 items-center'>
                         <div>
-                            <Image src={logoAlia} alt='' width={300} height={300} className='mb-4' />
+                            <Image src={'/assets/Aliìa_logo_negro.png'} alt='' width={300} height={300} className='mb-4' />
                             <span className='text-xl uppercase tracking-[1.2em] font-medium'>Querétaro</span>
 
                             <p className='text-xl my-14'>Alía Residencial Querétaro te brinda una ubicación privilegiada en una de las zonas con mayor crecimiento y plusvalía, convirtiendo tu hogar en una inversión segura.</p>
@@ -70,7 +70,7 @@ export default function DesarrollosPage() {
                         </div>
                         <div className='min-h-96 lg:min-h-[40rem] overflow-hidden bg-black relative'>
                             <Image 
-                                src={r1} 
+                                src={'/assets/24A_CDM_R10_VISTA_4.webp'} 
                                 alt='' 
                                 layout='fill' // Esto hace que la imagen ocupe todo el espacio del contenedor padre
                                 objectFit='cover' // Esto asegura que la imagen cubra todo el espacio sin distorsionarse
@@ -83,7 +83,7 @@ export default function DesarrollosPage() {
                     <div className='grid grid-cols-2 gap-20 items-center'>
                         <div className='min-h-96 lg:min-h-[40rem] overflow-hidden bg-black relative'>
                             <Image 
-                                src={r2} 
+                                src={'/assets/VILLAMGN_SEM_R09_AV-4.jpg'} 
                                 alt='' 
                                 layout='fill' // Esto hace que la imagen ocupe todo el espacio del contenedor padre
                                 objectFit='cover' // Esto asegura que la imagen cubra todo el espacio sin distorsionarse
@@ -92,7 +92,7 @@ export default function DesarrollosPage() {
                         </div>
 
                         <div>
-                            <Image src={logoAlia} alt='' width={300} height={300} className='mb-4' />
+                            <Image src={'/assets/Aliìa_logo_negro.png'} alt='' width={300} height={300} className='mb-4' />
                             <span className='text-xl uppercase tracking-[0.6em] font-medium'>San Luis Potosí</span>
 
                             <p className='text-xl my-14'>Alía Residencial San Luis Potosí, se ubica dentro de los puntos más altos de Villa Magna. Lo que te permite vistas espectaculares hacia la ciudad y hacia la cañada mejor conocido como paseo a la Presa de San José.</p>
@@ -134,7 +134,7 @@ export default function DesarrollosPage() {
 
                     <div className='grid grid-cols-2 gap-20 items-center'>
                         <div>
-                            <Image src={Domum} alt='' width={300} height={300} className='mb-4' />
+                            <Image src={'/assets/domum color.png'} alt='' width={300} height={300} className='mb-4' />
                             <span className='text-xl uppercase tracking-[0.6em] font-medium'>San Luis Potosí</span>
 
                             <p className='text-xl my-14'>Casas Domum San Luis Potosí está ubicada en el macrodesarrollo más importante de la ciudad, Los Lagos Residencial, en la privada Cielo Abierto, <br /> justo frente al Parque Tres Naciones.</p>
@@ -174,7 +174,7 @@ export default function DesarrollosPage() {
                         </div>
                         <div className='min-h-96 lg:min-h-[40rem] overflow-hidden bg-black relative'>
                             <Image 
-                                src={r3} 
+                                src={'/assets/DSC00884.jpg'} 
                                 alt='' 
                                 layout='fill' // Esto hace que la imagen ocupe todo el espacio del contenedor padre
                                 objectFit='cover' // Esto asegura que la imagen cubra todo el espacio sin distorsionarse

@@ -7,14 +7,14 @@ export const Footer = () => {
     <div className="relative py-10 w-full bg-neutral-900">
         <div className="absolute inset-0 bg-fuchsia-400 bg-[size:20px_20px] opacity-20 blur-[100px]"></div>
         <div className='absolute inset-0 h-full w-full z-0'>
-            <Image src={Lagos} alt="" className='object-cover  w-full h-full  opacity-40' />
+            <Image src={'/assets/lagos.png'} alt="" layout='fill' objectFit='cover' className='opacity-40' />
         </div>
         <div className="container mx-auto z-10 relative">
             <div className='grid md:grid-cols-2 gap-4 md:gap-20 lg:gap-6 lg:grid-cols-5 text-white px-12 lg:px-0'>
                 <div className='lg:col-span-2'>
                     <div>
                         <a href="">
-                        <Image src={Logo} alt="" className='w-36' />
+                        <Image src={'/assets/domum bl.png'} alt="" width={100} height={100} />
                         </a>
                     </div>
                     <div className='mt-6 text-sm'>

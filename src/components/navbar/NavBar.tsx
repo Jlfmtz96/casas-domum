@@ -5,8 +5,8 @@ import { IoClose, IoLogoFacebook, IoLogoInstagram, IoLogoTiktok, IoLogoTwitter, 
 
 import styles from './Navbar.module.css';
 
-import Logo from '../../assets/domum bl.png';
-import LogoColor from '../../assets/domum color.png';
+import Logo from '/assets/domum bl.png';
+import LogoColor from '/assets/domum color.png';
 import Image from "next/image";
 import Link from "next/link";
 
@@ -60,7 +60,7 @@ export const NavBar = () => {
                         </a> */}
                         <div className="flex flex-grow basis-0">
                             <a href="/">
-                                <Image src={isScrolled ? LogoColor : Logo} alt="" className={`w-36 transition-all duration-300 ease-in-out ${isScrolled ? 'filter-invert' : ''}`}/>
+                                <Image src={isScrolled ? '/assets/domum color.png' : '/assets/domum bl.png'} alt="" className={`transition-all duration-300 ease-in-out ${isScrolled ? 'filter-invert' : ''}`} width={120} height={120}/>
                                 {/* <h1 className='text-3xl font-bold'>Domum</h1> */}
                             </a>
                         </div>
