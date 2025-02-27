@@ -72,19 +72,19 @@ export default function AliaQroPage() {
                 <Image src={'/assets/domum/DSC00834.jpg'} alt="" layout="fill" objectFit="cover" />
             </div>
             <div className='relative hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl h-96 w-full'>
-                <Image src={'/assets/domum/DSC00866.jpg'} alt="" layout="fill" objectFit="cover"/>
+                <Image src={'/assets/domum/GDSC00866.jpg'} alt="" layout="fill" objectFit="cover"/>
             </div>
             <div className='relative hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl h-96 w-full'>
                 <Image src={'/assets/domum/DSC00849.jpg'} alt="" layout="fill" objectFit="cover"/>
             </div>
             <div className='relative hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl h-96 w-full'>
-                <Image src={'/assets/domum/DSC00865.jpg'} alt="" layout="fill" objectFit="cover"/>
+                <Image src={'/assets/domum/GDSC00865.jpg'} alt="" layout="fill" objectFit="cover"/>
             </div>
             <div className='relative hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl h-96 w-full'>
-                <Image src={'/assets/domum/DSC00883.jpg'} alt="" layout="fill" objectFit="cover"/>
+                <Image src={'/assets/domum/GDSC00883.jpg'} alt="" layout="fill" objectFit="cover"/>
             </div>
             <div className='relative hover:transform hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:shadow-xl h-96 w-full'>
-                <Image src={'/assets/domum/DSC00887.jpg'} alt="" layout="fill" objectFit="cover"/>
+                <Image src={'/assets/domum/GDSC00887.jpg'} alt="" layout="fill" objectFit="cover"/>
             </div>
 
         </div>

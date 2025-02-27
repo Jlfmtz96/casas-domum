@@ -174,7 +174,7 @@ export default function DesarrollosPage() {
                         </div>
                         <div className='min-h-96 lg:min-h-[40rem] overflow-hidden bg-black relative'>
                             <Image 
-                                src={'/assets/DSC00884.jpg'} 
+                                src={'/assets/domum/DSC00884.jpg'} 
                                 alt='' 
                                 layout='fill' // Esto hace que la imagen ocupe todo el espacio del contenedor padre
                                 objectFit='cover' // Esto asegura que la imagen cubra todo el espacio sin distorsionarse
