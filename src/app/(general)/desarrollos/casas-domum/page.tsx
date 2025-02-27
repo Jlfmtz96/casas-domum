@@ -37,7 +37,7 @@ export default function AliaQroPage() {
   return (
     <section>
         <div className="h-screen w-full overflow-hidden">
-            <Image src={'/assets/DSC00884.jpg'} alt="" layout="fill" objectFit="cover" />
+            <Image src={'/assets/domum/DSC00884.jpg'} alt="" layout="fill" objectFit="cover" />
         </div>
 
         <div className="container mx-auto">
