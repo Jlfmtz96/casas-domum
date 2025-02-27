@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
+
+import path from 'path'; // Importa el módulo path
+
 const nextConfig = {
     images: {
         remotePatterns: [
